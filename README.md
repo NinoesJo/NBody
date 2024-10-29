@@ -11,8 +11,6 @@ This is the directions document for Project P1 NBody in CompSci 201 at Duke Univ
   - [The `NBody` Class](#the-nbody-class)
   - [`NBody` Methods](#nbody-methods)
   - [Note on Running the Simulation](#note-on-running-the-simulation)
-- [Analysis Questions](#analysis-questions)
-- [Submitting and Grading](#submitting-and-grading)
 
 ## Background (optional but encouraged)
 
@@ -282,51 +280,9 @@ When the simulation is over your code prints out the final state of the universe
 | 1.0555e+11 | 2.3363e+10 |-7.5708e+03 | 3.4204e+04 | 4.8690e+24 |   venus.gif |
 
 
-The code for printing is given to you in the `NBody.java` you start with. This code isn't all that exciting (which is why we've provided a solution), but we'll need this method to work correctly to autograde your assignment. ***You should NOT print anything other than the final printing shown here***. This printing is done after your simulation completes. *If you use debugging print statements, be sure to remove them before testing in Gradescope.*
+The code for printing is given to you in the `NBody.java` you start with. This code isn't all that exciting (which is why we've provided a solution), but we'll need this method to work correctly to autograde your assignment. ***You should NOT print anything other than the final printing shown here***. This printing is done after your simulation completes.
 
 When the simulation finishes, you'll need to close/quit the graphics window to be able to run another simulation. Use the red X button in the upper left of the graphics window to dismiss the window.
-
-
-## Analysis Questions
-
-Answer the following questions in your analysis. You'll submit your analysis as a separate PDF as a separate assignment to Gradescope.
-
-### Question 1
-
-The data files used for this assignment start by stating the number of `CelestialBody` objects in the data file. Suppose this were not the case; could you still run the simulation if all other data were present? Briefly explain how you could still create an array of `CelestialBody` objects of the same size when reading the file.
-
-### Question 2
-
-If there are $`n`$ `CelestialBody` objects, how many many total times will the code have to execute the `calcForceExertedByX` method per time step (that is, per iteration of the outer loop of the main method) of the simulation? Your answer should be in terms of $`n`$. Briefly explain your answer.
-
-### Question 3
-
-In terms of `totalTime` and `dt`, how many total time steps (that is, iterations of the outer loop of the main method) will there be in the simulation? Briefly explain your ansswer. Based on this, would increasing the value of `dt` increase, decrease, or have no impact on computational resources necessary to run a complete simulation?
-
-### Question 4
-
-`dt`was initially set to `25000.0`. Change this value to `1000000.0` (one million) and run the simulation again. You should see behavior inconsistent with what is expected for the simulation. Briefly explain why increasing the value of `dt` could cause this behavior.
-
-### Question 5
-
-Read (Making data visualizaiton more accessible for blind and low-vision individuals)[https://news.mit.edu/2022/data-visualization-accessible-blind-0602], and summarize in one paragraph the main ideas in the paper. In another paragraph relate the work you've done with this visualization to the ideas in that article and how you might make the results of this simulation effective for blind or low-vision people. 
-
-## Zoom recording
-
-Record the initial 20 minutes, or some 20 minutes, of you writing code to solve this project, 
-record the URL to your zoom cloud recording [using this link](https://forms.office.com/r/hCxFh6GEvf).
-
-## Submitting and Grading
-You will submit the assignment on Gradescope. You can access Gradescope through the tab on Sakai. The [project workflow writeup](https://coursework.cs.duke.edu/cs-201-spring-23/resources-201/-/blob/main/projectWorkflow.md) explains the how to submit your project in detail. Be sure to push changes often and be sure your final program is in your Git repository before you submit it for autograding on Gradescope. Please take note that changes/commits on GitLab are NOT automatically synced to Gradescope. You are welcome to submit as many times as you like, only the most recent submission will count for a grade.
-
-Don't forget to upload a PDF for the analysis part of this assignment and mark where you answer each question. This is a separate submission in Gradescope.
-
-| Project Part | Points |
-| ------ | ------ |
-| CelestialBody | 8 |
-| NBody | 8 |
-| Analysis | 10 |
-| Zoom recording | 2 |
 
 [Physics]:https://docs.google.com/document/d/1LRRW970ZwgZQtsif1L1SfRBTlB_VUGJAZKYol-DHGWE/edit?usp=sharing
 
